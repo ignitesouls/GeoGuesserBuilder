@@ -1,0 +1,3 @@
+[submodule "dependencies/EldenRingTool"]
+	path = dependencies/EldenRingTool
+	url = https://github.com/ignitesouls/EldenRingTool.git
