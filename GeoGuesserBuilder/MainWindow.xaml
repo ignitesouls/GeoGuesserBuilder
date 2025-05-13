@@ -1,0 +1,33 @@
+﻿<Window x:Class="GeoGuesserBuilder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:GeoGuesserBuilder"
+        mc:Ignorable="d"
+        xmlns:views="clr-namespace:GeoGuesserBuilder.Views"
+        xmlns:viewmodels="clr-namespace:GeoGuesserBuilder.ViewModels"
+        Title="GeoGuesserBuilder v0.1.0" Height="500" Width="800" ResizeMode="CanMinimize">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <!-- Menu -->
+            <RowDefinition Height="*"/>
+            <!-- Main content -->
+        </Grid.RowDefinitions>
+
+        <Border BorderBrush="DarkGray" BorderThickness="0,0,0,1">
+            <Menu Grid.Row="0">
+                <MenuItem Header="_File">
+                    <MenuItem Header="_Open..." Click="Menu_Open_Click"/>
+                    <MenuItem Header="_Save..." Click="Menu_Save_Click"/>
+                    <Separator/>
+                    <MenuItem Header="E_xit" Click="Menu_Exit_Click"/>
+                </MenuItem>
+            </Menu>
+        </Border>
+
+        <views:MainView Grid.Row="1"/>
+    </Grid>
+</Window>

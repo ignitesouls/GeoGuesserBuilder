@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeoGuesserBuilder", "GeoGuesserBuilder\GeoGuesserBuilder.csproj", "{584C46E0-F0BA-4E95-B770-F97A29E8631D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EldenRingTool", "dependencies\EldenRingTool\EldenRingTool.csproj", "{E9A1ED9A-498B-4F18-87B2-7E4CA61A2CCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SoulsFormats", "dependencies\Andre\SoulsFormats\SoulsFormats\SoulsFormats.csproj", "{E8DF283E-3D74-BD3B-E82E-8A39FDB92363}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{584C46E0-F0BA-4E95-B770-F97A29E8631D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{584C46E0-F0BA-4E95-B770-F97A29E8631D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{584C46E0-F0BA-4E95-B770-F97A29E8631D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{584C46E0-F0BA-4E95-B770-F97A29E8631D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E9A1ED9A-498B-4F18-87B2-7E4CA61A2CCE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9A1ED9A-498B-4F18-87B2-7E4CA61A2CCE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9A1ED9A-498B-4F18-87B2-7E4CA61A2CCE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9A1ED9A-498B-4F18-87B2-7E4CA61A2CCE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8DF283E-3D74-BD3B-E82E-8A39FDB92363}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8DF283E-3D74-BD3B-E82E-8A39FDB92363}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8DF283E-3D74-BD3B-E82E-8A39FDB92363}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8DF283E-3D74-BD3B-E82E-8A39FDB92363}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {209E4DF7-0DDF-493C-93E1-1D87A294C19F}
+	EndGlobalSection
+EndGlobal
