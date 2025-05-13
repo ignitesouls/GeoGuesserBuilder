@@ -114,10 +114,10 @@ public class MainViewModel : INotifyPropertyChanged, IDisposable
         ImportCommand = new RelayCommand(ImportProject);
         CaptureLocationCommand = new RelayCommand(
             CaptureLocation,
-            () => _erProcessService.IsGameRunning && _erProcessService.PlayerLocationValid);
+            () => _erProcessService.IsGameRunning && _erProcessService.PlayerLocationValid && CapturedLocations.Count < 20);
         DeleteLocationCommand = new RelayCommand<GGLocationViewModel>(DeleteLocation);
         BuildModCommand = new RelayCommand(BuildMod,
-            () => ModStatus == ModBuildStatus.ReadyToBuild && !IsBusy);
+            () => ModStatus == ModBuildStatus.ReadyToBuild && !IsBusy && CapturedLocations.Count <= 20);
         PackageModCommand = new RelayCommand(PackageMod, () => ModStatus == ModBuildStatus.Built && !IsBusy);
         LaunchEldenRingCommand = new RelayCommand(
             () => LaunchEldenRing("launchmod_eldenring.bat"),
@@ -145,6 +145,7 @@ public class MainViewModel : INotifyPropertyChanged, IDisposable
     private void CaptureLocation()
     {
         if (!_erProcessService.IsProcessAttached) return;
+        if (CapturedLocations.Count >= 20) return;
 
         var coords = _erProcessService.GetMapCoords();
         string name = string.IsNullOrWhiteSpace(NewLocationName) ? "Unnamed Location" : NewLocationName;
@@ -173,7 +174,7 @@ public class MainViewModel : INotifyPropertyChanged, IDisposable
 
     private async void BuildMod()
     {
-        if (!CapturedLocations.Any()) return;
+        if (!CapturedLocations.Any() || CapturedLocations.Count >= 20) return;
         IsBusy = true;
 
         try
