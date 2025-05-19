@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿// SPDX-License-Identifier: GPL-3.0-only
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using Microsoft.Xaml.Behaviors;

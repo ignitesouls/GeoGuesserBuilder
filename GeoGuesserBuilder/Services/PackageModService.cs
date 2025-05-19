@@ -1,4 +1,5 @@
-﻿using System;
+﻿// SPDX-License-Identifier: GPL-3.0-only
+using System;
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.IO;
@@ -15,10 +16,11 @@ public class PackageModService
     private const string TempDir = ".\\temp_mod_output";
     private const string ModTargetDir = ".\\temp_mod_output\\GeoGuesserMod";
     private const string ModSourceDir = ".\\Resources\\ModEngine-2.1.0.0-win64";
-    private string[] DirectoriesToCopy = new string[2]
+    private string[] DirectoriesToCopy = new string[3]
     {
         "modengine2",
-        "geoguesser"
+        "geoguesser",
+        "SkipTheIntro"
     };
     private string[] FilesToCopy = new string[4]
     {

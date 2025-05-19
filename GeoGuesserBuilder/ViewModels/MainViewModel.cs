@@ -1,4 +1,5 @@
-﻿using System;
+﻿// SPDX-License-Identifier: GPL-3.0-only
+using System;
 using Microsoft.Win32;
 using System.IO;
 using System.Text.Json;

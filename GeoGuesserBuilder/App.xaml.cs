@@ -1,4 +1,5 @@
-﻿using System.Configuration;
+﻿// SPDX-License-Identifier: GPL-3.0-only
+using System.Configuration;
 using System.Data;
 using System.Windows;
 

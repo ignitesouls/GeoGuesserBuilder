@@ -1,4 +1,5 @@
-﻿using GeoGuesserBuilder.Models;
+﻿// SPDX-License-Identifier: GPL-3.0-only
+using GeoGuesserBuilder.Models;
 using GeoGuesserBuilder.ViewModels;
 using System.Collections.Generic;
 using System.Linq;
